@@ -1,0 +1,231 @@
+@font-face {
+    font-family: Proxima Nova Thin;
+    src: url(fonts/Proxima_Nova_Thin.otf);
+}
+@font-face {
+    font-family: Proxima Nova Regular;
+    src: url(fonts/Proxima_Nova_Regular.otf);
+}
+@font-face {
+    font-family: Proxima Nova Semibold;
+    src: url(fonts/Proxima_Nova_Semibold.otf);
+}
+#header {
+    margin-bottom: 15px;
+}
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.about {
+  position: absolute;
+  bottom: 0;
+}
+.show-block {
+    min-width: 650px;
+}
+#wrapper {
+    display: inline-block;
+}
+#left-content {
+    width: 100px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #1B1B1E;
+    display: block;
+    min-height: 650px;
+    z-index: 1;
+}
+.selected {
+    color: white;
+}
+#left-bar-items {
+    color: #88898C;
+    margin-top: 40px;
+}
+.menu-block:hover {
+    color: white;
+    cursor: pointer;
+}
+#top_logo {
+    display: block;
+    padding-top: 33px;
+    margin: auto;
+}
+.numerical-date {
+    font-family: Proxima Nova Semibold;
+    font-size: 28px;
+}
+.day-of-week {
+    font-family: Proxima Nova Semibold;
+    font-size: 12px;
+    top: -5px;
+    position: relative;
+}
+.menu-block {
+    width: 100%;
+    height: 75px;
+    text-align: center;
+}
+#main {
+    position: absolute;
+    left: 100px;
+    display: block;
+    width: 90%;
+    height: 100%;
+}
+html,
+body {
+    height: 100%;
+    background-color: #101213;
+    margin: 0px;
+}
+#logo_sub {
+    padding-top: 35px;
+    padding-left: 30px;
+    vertical-align: top;
+}
+.fixed {
+    position: fixed;
+    bottom: 15px;
+    right:15px;
+}
+.show-name {
+    color: white;
+    font-family: Proxima Nova Thin;
+    font-size: 20px;
+}
+#main-content {
+    display: inline-block;
+    padding-left: 30px;
+}
+.show-block {
+    margin-bottom: 15px;
+}
+.artist-card {
+    margin-top: 10px;
+    font-family: Proxima Nova Regular;
+    font-size: 12px;
+    color: #88898C;
+    height: 325px;
+    width: 200px;
+    background-color: #212225;
+    display: inline-block;
+    vertical-align: top;
+}
+.artist-info-name {
+    color: white;
+    font-size: 17px;
+    color: white;
+}
+.artist-card-info {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+.artist-card-bio {
+    margin-top: 10px;
+}
+.artist-name {
+    color: white;
+    font-size: 32px;
+    font-family: Proxima Nova Regular;
+    text-transform: uppercase;
+}
+.artist-name-and-top-songs {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.channel-and-time {
+    color: white;
+    font-family: Proxima Nova Thin;
+    font-size: 20px;
+}
+.read-more {
+    margin-top: 5px;
+    color: white;
+    font-size: 11px;
+}
+.read-more:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.song-row {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #282828;
+    background-color: #181818;
+}
+.song-row:hover {
+    cursor: pointer;
+}
+.play-or-speaker {
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.play {
+    background-image: url("assets/play.png");
+}
+.speaker {
+    background-image: url("assets/playing.png");
+}
+.hr {
+    margin-top: 25px;
+    background: #212225;
+    height: 2px;
+    width: 100%;
+}
+.selected-row,
+.song-row:hover {
+    background-color: #333333;
+}
+.song-title {
+    vertical-align: top;
+    display: inline-block;
+    width: 500px;
+    height: 40px;
+    color: white;
+    font-family: Proxima Nova Regular;
+    font-size: 14px;
+    line-height: 40px;
+}
+.top-song-header {
+    width: 100%;
+    font-family: Proxima Nova Regular;
+    font-size: 15px;
+    color: #A0A0A0;
+    margin-bottom: 10px;
+}
+.top-songs-header {
+    margin-left: 50px;
+}
+.buy-it-header {
+    float: right;
+}
+.top-songs {
+    margin-top: 25px;
+}
+#video-player {
+    position: fixed;
+    top: 150px;
+    right: 50px;
+    padding-left: 15px;
+}
+.collided {
+    zoom: 150%;
+}
+a, u {
+    text-decoration: none;
+}
