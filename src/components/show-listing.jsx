@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React, {
+    Component
+} from 'react';
 
 export default class ShowListing extends Component {
-  render() {
-    return (
-      <div className="show-block">
+    render() {
+        return (
+            <div className="show-block">
             <div className="show-name">{this.props.showListing.showName}</div>
             <div>
                   <div className="artist-card">
@@ -39,6 +41,6 @@ export default class ShowListing extends Component {
             </div>
             <div className="hr"></div>
       </div>
-    );
-  }
+        );
+    }
 }
