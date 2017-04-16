@@ -290,8 +290,8 @@ const data = {
         artistWikipediaUrl: "https://en.wikipedia.org/wiki/Chris_Cornell",
         topSongs: [
           {
-            songName: "The Promise",
-            youtubeEmbedUrl: "https://www.youtube.com/embed/WPiJ79Ure1I",            
+            songName: "Nothing Compares 2 U (Prince Cover Live @ SiriusXM)",
+            youtubeEmbedUrl: "https://www.youtube.com/embed/IuUDRU9-HRk",            
           },
           {
             songName: "Part of Me ft. Timbaland",
@@ -380,24 +380,24 @@ const data = {
         artistWikipediaUrl: "https://en.wikipedia.org/wiki/Aquilo_(band)",
         topSongs: [
           {
-            songName: "You Won't Know Where You Stand (Silhouettes Trilogy : Part I)",
-            youtubeEmbedUrl: "https://www.youtube.com/embed/BCzrfJ5WYxU",            
+            songName: "Sorry",
+            youtubeEmbedUrl: "https://www.youtube.com/embed/Rh__vTd7CoY",            
           },
           {
-            songName: "Silhouette (Silhouettes Trilogy : Part II)",
+            songName: "Waiting",
             youtubeEmbedUrl: "https://www.youtube.com/embed/gVDRPWHWVvs",            
           },
           {
-            songName: "Almost Over (Silhouettes Trilogy : Part III)",
-            youtubeEmbedUrl: "https://www.youtube.com/embed/d2HGXyEdC10",            
+            songName: "I Don't Want To See It",
+            youtubeEmbedUrl: "https://www.youtube.com/embed/IkguAFgoNDA",            
           },
           {
             songName: "You There",
             youtubeEmbedUrl: "https://www.youtube.com/embed/LlefHgF0kPA",            
           },
           {
-            songName: "Calling Me",
-            youtubeEmbedUrl: "https://www.youtube.com/embed/fMmWksDGLFg",            
+            songName: "I Gave It All (Part 1/2)",
+            youtubeEmbedUrl: "https://www.youtube.com/embed/xEbALC15Q1Y",            
           }
         ]
       },
