@@ -32,10 +32,10 @@ export default class Content extends Component {
         <div className="less-top-padding" id="main-content"> 
           {this.props.nightsListingData.listings.map(function(showListing, index){
             return <ShowListing
-                  showListing={showListing}
-                  key={index}
-                  youtubeEmbedUrl={this.state.youtubeEmbedUrl} 
-                  setYoutubeEmbedUrl={this.setYoutubeEmbedUrl}/>
+                      showListing={showListing}
+                      key={index}
+                      youtubeEmbedUrl={this.state.youtubeEmbedUrl} 
+                      setYoutubeEmbedUrl={this.setYoutubeEmbedUrl}/>
           }, this)}
         </div>
       </div>
