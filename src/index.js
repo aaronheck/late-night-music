@@ -10,8 +10,10 @@ import './App.css';
 class Application extends Component {
     constructor(props) {
         super(props);
+        const today = new Date();
+        const todayStr = (today.getMonth() + 1) + "/" + (today.getDate());
         this.state = {
-            nightsListingData: data[data.dates[0]]
+            nightsListingData: data[todayStr] || data[data.dates[0]]
         };
         this.handleDateSelect = this.handleDateSelect.bind(this);
     }
