@@ -31,7 +31,7 @@ export default class ShowListing extends Component {
                               {this.props.showListing.topSongs.map((topSong, index)=>{
                                     return <div className={this.props.youtubeEmbedUrl === topSong.youtubeEmbedUrl ? "song-row selected-row" : "song-row"}
                                                 key={index}
-                                                onDoubleClick={()=>this.props.setYoutubeEmbedUrl(topSong.youtubeEmbedUrl)}>
+                                                onClick={()=>this.props.setYoutubeEmbedUrl(topSong.youtubeEmbedUrl)}>
                                                 <div className={this.props.youtubeEmbedUrl === topSong.youtubeEmbedUrl ? "play-or-speaker speaker" : "play-or-speaker play"}> </div>
                                                 <div className="song-title">{topSong.songName}</div>
                                           </div>;
