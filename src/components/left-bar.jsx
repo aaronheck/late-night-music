@@ -18,7 +18,7 @@ export default class LeftBar extends Component {
 						</div>;
 			}, this)}
 
-			<div className="menu-block about">
+			<div className="menu-block about" onClick={()=>window.location.href="/about.html"}>
 				<div className="day-of-week">ABOUT</div>
 			</div>
 		</div>
