@@ -1,38 +1,55 @@
 import React, {
     Component
 } from 'react';
+import axios from 'axios';
 import ReactDOM from "react-dom";
 import LeftBar from "./components/left-bar";
 import Content from "./components/content";
-import data from "./data";
 import './App.css';
 
 class Application extends Component {
     constructor(props) {
         super(props);
-        const today = new Date();
-        const todayStr = (today.getMonth() + 1) + "/" + (today.getDate());
-        this.state = {
-            nightsListingData: data[todayStr] || data[data.dates[0]]
-        };
+        this.state = {};
         this.handleDateSelect = this.handleDateSelect.bind(this);
     }
 
+    componentDidMount() {
+        var s = this;
+        axios.get('http://aaronrosenheck.com/data/current.json')
+            .then(function(res) {
+                var data = res.data;
+                console.log(data.dates);
+                const today = new Date();
+                const todayStr = (today.getMonth() + 1) + "/" + (today.getDate());
+                s.setState({
+                    date: data.dates.includes(todayStr) ? todayStr : data.dates[0],
+                    dataForWeek: data
+                });
+            });
+      }
+
     handleDateSelect(date) {
         this.setState({
-            nightsListingData: data[date]
+            date: date
         });
     }
 
     render() {
         return (
-            <div id="wrapper">
-        <LeftBar
-          dates={data.dates}
-          selectedDate={this.state.nightsListingData.date}
-          handleDateSelect={this.handleDateSelect} />
-        <Content nightsListingData={this.state.nightsListingData}/>
-      </div>
+            <div>
+                {this.state.dataForWeek ?
+                    <div id="wrapper">
+                        <LeftBar
+                          dates={this.state.dataForWeek.dates}
+                          selectedDate={this.state.date}
+                          handleDateSelect={this.handleDateSelect} />
+                        <Content nightsListingData={this.state.dataForWeek[this.state.date]}/>
+                    </div>
+                    : 
+                    <div id="logo_sub" className="loading show-name">one sec. i'm loading things...</div>
+                }
+            </div>
         );
     }
 }
