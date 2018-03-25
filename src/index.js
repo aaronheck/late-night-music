@@ -19,7 +19,6 @@ class Application extends Component {
         axios.get('http://aaronrosenheck.com/data/current.json')
             .then(function(res) {
                 var data = res.data;
-                console.log(data.dates);
                 const today = new Date();
                 const todayStr = (today.getMonth() + 1) + "/" + (today.getDate());
                 s.setState({
